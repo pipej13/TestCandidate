@@ -1,0 +1,112 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model List<Candidates.Data.Candidate>
+<div class="row">
+    <div>
+        <h2>Candidatos</h2>
+        <div class="form-group">
+            <input type="text" class="form-control pull-right mb-2" style="width:20%" id="search" placeholder="Buscar...">
+        </div>
+        <div>
+            <a asp-controller="Candidate" asp-action="NewCandidate" class="btn btn-success mb-3">Nuevo Candidato</a>
+            <a asp-controller="CandidateExperiences" asp-action="ListExperiences" class="btn btn-info mb-3">Lista Total de Experiencias</a>
+        </div>
+
+
+        <table class="table table-bordered" width="100%" id="mytable">
+            <thead>
+                <tr>
+                    <th>
+                        Documento
+                    </th>
+                    <th>
+                        Nombre
+                    </th>
+                    <th>
+                        Apellido
+                    </th>
+                    <th>
+                        Facha de Nacimiento
+                    </th>
+                    <th>
+                        Email
+                    </th>
+                    <th>
+                        Fecha de Creación
+                    </th>
+                    <th>
+                        Fecha de Modificación
+                    </th>
+                    <th>
+                        Acciones Candidatos
+                    </th>
+                    <th>
+                        Acciones Experiencia
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.IdCandidate
+                        </td>
+                        <td>                            
+                            @item.Name
+                        </td>
+                        <td>
+                            @item.Surname
+                        </td>
+                        <td>
+                            @item.Birthdate
+                        </td>
+                        <td>
+                            @item.Email
+                        </td>
+                        <td>
+                            @item.InsertDate.ToString("dd/MM/yyyy hh:mm")
+                        </td>
+                        <td>
+                            @item.ModifyDate
+                        </td>
+                        <td>
+                            <a asp-controller="Candidate" asp-action="EditCandidate" asp-route-idCandidate="@item.IdCandidate" class="btn btn-warning mb-1">Editar</a>
+                            <a asp-controller="Candidate" asp-action="DeleteCandidate" asp-route-idCandidate="@item.IdCandidate" class="btn btn-danger mb-1" onclick="return Sure()">Eliminar</a>
+                        </td>
+                        <td>                            
+                            <a asp-controller="CandidateExperiences" asp-action="ListExperiencesCandidate" asp-route-idCandidate="@item.IdCandidate" class="btn btn-info">Experiencias</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+@section Scripts {
+    <script>
+        // Write on keyup event of keyword input element
+         $(document).ready(function(){
+         $("#search").keyup(function(){
+         _this = this;
+         // Show only matching TR, hide rest of them
+         $.each($("#mytable tbody tr"), function() {
+         if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+         $(this).hide();
+         else
+         $(this).show();
+         });
+         });
+        });
+
+        function Sure() { 
+            return confirm("Esta seguro de Eliminar este Candidato?")
+        }
+    </script>
+}
+
+

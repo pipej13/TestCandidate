@@ -1,0 +1,50 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Candidates.Data.Candidate;
+<div class="row" width="100%">
+    <div>
+        <h2>Nuevo Candidato</h2>
+        <form asp-controller="Candidate" asp-action="NewCandidate" method="post">
+            <div class="mb-1">
+                <label>No. Documento</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="IdCandidate" type="number" required="true" />
+            </div>
+            <div class ="mb-1">
+                <label>Nombre</label>
+            </div>
+            <div class="mb-2">                
+                <input class="from-control" asp-for="Name" type="text" required="true" />
+            </div>
+            <div class="m-0">
+                <label>Apellido</label>
+            </div>
+            <div class="mb-2">                
+                <input class="from-control" asp-for="Surname" type="text" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Fecha de Nacimiento</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Birthdate" type="date" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Email</label>
+            </div>
+            <div class="mb-2">                
+                <input class="from-control" asp-for="Email" type="email" required="true" />
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="ModifyDate" type="date" required="true" type="hidden" />
+            </div>
+            <div class="mb-2">
+                <button class="btn btn-primary" type="submit">Crear</button>
+                <a asp-controller="Candidate" asp-action="List" class="btn btn-secondary">Ver Lista</a>
+            </div>
+        </form>
+    </div>
+</div>

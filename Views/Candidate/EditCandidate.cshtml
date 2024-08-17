@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Candidates.Data.Candidate;
+<div class="row" width="100%">
+    <div>
+        <h2>Editar Candidato</h2>
+        <form asp-controller="Candidate" asp-action="EditCandidate" method="post">            
+            <input asp-for="InsertDate" type="hidden" />
+            <input asp-for="IdCandidate" type="hidden" />
+            <div class="mb-1">
+                <label>Nombre</label>
+            </div>
+            <div class="mb-2">
+                <input asp-for="IdCandidate" disabled="disabled" />
+            </div>
+            <div class="mb-1">
+                <label>Nombre</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Name" type="text" required="true" />
+            </div>
+            <div class="m-0">
+                <label>Apellido</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Surname" type="text" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Fecha de Nacimiento</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Birthdate" type="date" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Email</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Email" type="email" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Fecha de Creación</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="InsertDate" type="datetime" required="true" disabled="disabled" />
+            </div>
+            <div class="mb-0">
+                <label>Fecha de Modificación</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="ModifyDate" type="datetime" required="true" disabled="disabled" />
+            </div>
+            <div class="mb-2">
+                <button class="btn btn-primary" type="submit">Actualizar</button>
+                <a asp-controller="Candidate" asp-action="List" class="btn btn-secondary">Ver Lista</a>
+            </div>
+        </form>
+    </div>
+</div>

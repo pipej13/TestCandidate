@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model Candidates.Data.CandidateEsperiences;
+<div class="row" width="100%">
+    <div>
+        <h2>Editar Experiencia del Candidato  @ViewBag.NombreCandidate - Documento @ViewBag.IdCandidate</h2>
+        <form asp-controller="CandidateExperiences" asp-action="EditCandidateExperience" method="post">
+            <input asp-for="InsertDate" type="hidden" />
+            <input asp-for="IdCandidate" type="hidden" />
+            <input asp-for="IdCandidateExperience" type="hidden" />
+            <div class="mb-1">
+                <label>No. Documento Candidato</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="IdCandidate" value="@(ViewBag.IdCandidate)" type="text" required="true" disabled="disabled" />                
+            </div>
+            <div class="mb-0">
+                <label>Empresa</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Company" type="text" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Cargo</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Job" type="text" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Descripción</label>
+            </div>
+            <div class="mb-2">
+                <textarea class="from-control" asp-for="Description" required="true" maxlength="3999"></textarea>
+            </div>
+            <div class="mb-0">
+                <label>Salario</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="Salary" type="number" required="true" max="9999999" min="0"/>
+            </div>
+            <div class="mb-0">
+                <label>Fecha Ingreso</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="BeginDate" type="date" required="true" />
+            </div>
+            <div class="mb-0">
+                <label>Fecha Retiro</label>
+            </div>
+            <div class="mb-2">
+                <input class="from-control" asp-for="EndDate" type="date" />
+            </div>
+            <div class="mb-2">
+                <button class="btn btn-primary" type="submit">Actualizar</button>
+                <a asp-controller="CandidateExperiences" asp-action="ListExperiencesCandidate" asp-route-idCandidate="@ViewBag.IdCandidate" class="btn btn-secondary">Ver Lista</a>
+            </div>
+        </form>
+    </div>
+</div>
