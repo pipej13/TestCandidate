@@ -7858,11 +7858,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pipe\\source\\repos\\Condidates\\Candidates.csproj",
+      "projectUniqueName": "C:\\Users\\Pipe\\source\\repos\\CandidateRepo\\Candidates.csproj",
       "projectName": "Candidates",
-      "projectPath": "C:\\Users\\Pipe\\source\\repos\\Condidates\\Candidates.csproj",
+      "projectPath": "C:\\Users\\Pipe\\source\\repos\\CandidateRepo\\Candidates.csproj",
       "packagesPath": "C:\\Users\\Pipe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pipe\\source\\repos\\Condidates\\obj\\",
+      "outputPath": "C:\\Users\\Pipe\\source\\repos\\CandidateRepo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

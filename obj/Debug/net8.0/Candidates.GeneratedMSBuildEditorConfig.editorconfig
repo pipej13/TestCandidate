@@ -17,67 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Candidates
 build_property.RootNamespace = Candidates
-build_property.ProjectDir = C:\Users\Pipe\source\repos\Condidates\
+build_property.ProjectDir = C:\Users\Pipe\source\repos\CandidateRepo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Pipe\source\repos\Condidates
+build_property.MSBuildProjectDirectory = C:\Users\Pipe\source\repos\CandidateRepo
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/CandidateExperiences/EditCandidateExperience.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/CandidateExperiences/EditCandidateExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcRWRpdENhbmRpZGF0ZUV4cGVyaWVuY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/CandidateExperiences/ListExperiences.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/CandidateExperiences/ListExperiences.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcTGlzdEV4cGVyaWVuY2VzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/CandidateExperiences/ListExperiencesCandidate.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/CandidateExperiences/ListExperiencesCandidate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcTGlzdEV4cGVyaWVuY2VzQ2FuZGlkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/CandidateExperiences/NewCandidateExperience.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/CandidateExperiences/NewCandidateExperience.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlRXhwZXJpZW5jZXNcTmV3Q2FuZGlkYXRlRXhwZXJpZW5jZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Candidate/EditCandidate.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Candidate/EditCandidate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXEVkaXRDYW5kaWRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Candidate/List.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Candidate/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Candidate/NewCandidate.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Candidate/NewCandidate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuZGlkYXRlXE5ld0NhbmRpZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Home/Index.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Home/Privacy.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Shared/Error.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/_ViewImports.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/_ViewStart.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Pipe/source/repos/Condidates/Views/Shared/_Layout.cshtml]
+[C:/Users/Pipe/source/repos/CandidateRepo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zjh4pmgax6

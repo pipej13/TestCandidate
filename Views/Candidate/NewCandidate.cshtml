@@ -14,29 +14,29 @@
             <div class="mb-2">
                 <input class="from-control" asp-for="IdCandidate" type="number" required="true" />
             </div>
-            <div class ="mb-1">
+            <div class="mb-1">
                 <label>Nombre</label>
             </div>
-            <div class="mb-2">                
-                <input class="from-control" asp-for="Name" type="text" required="true" />
+            <div class="mb-2">
+                <input class="from-control" asp-for="Name" type="text" maxlength="49" required="true" />
             </div>
             <div class="m-0">
                 <label>Apellido</label>
             </div>
-            <div class="mb-2">                
-                <input class="from-control" asp-for="Surname" type="text" required="true" />
+            <div class="mb-2">
+                <input class="from-control" asp-for="Surname" type="text" maxlength="149" required="true" />
             </div>
             <div class="mb-0">
                 <label>Fecha de Nacimiento</label>
             </div>
             <div class="mb-2">
-                <input class="from-control" asp-for="Birthdate" type="date" required="true" />
+                <input class="from-control" asp-for="Birthdate" min="1968-01-01" max="2006-01-01" type="date" required="true" />
             </div>
             <div class="mb-0">
                 <label>Email</label>
             </div>
-            <div class="mb-2">                
-                <input class="from-control" asp-for="Email" type="email" required="true" />
+            <div class="mb-2">
+                <input class="from-control" asp-for="Email" type="email" maxlength="149" required="true" />
             </div>
             <div class="mb-2">
                 <input class="from-control" asp-for="ModifyDate" type="date" required="true" type="hidden" />
@@ -48,3 +48,11 @@
         </form>
     </div>
 </div>
+@section Scripts {
+    @if (ViewBag.candidateExist == true)
+    {
+        <script>
+            alert("El candidato @ViewBag.candidateId ya existe. Por favor verifique o busquelo en la lista de candidatos inicial");
+        </script>
+    }
+}

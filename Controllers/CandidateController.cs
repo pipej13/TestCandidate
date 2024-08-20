@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Candidates.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 
 namespace Candidates.Controllers
 {
@@ -28,10 +29,20 @@ namespace Candidates.Controllers
         [HttpPost]
         public async Task<IActionResult> NewCandidate(Candidate candidate)
         {
-            candidate.InsertDate = DateTime.Now;
-            await _candidateFactoryContext.Candidates.AddAsync(candidate);
-            await _candidateFactoryContext.SaveChangesAsync();
-            return RedirectToAction(nameof(List));
+            List<Candidate> candidateExist = await _candidateFactoryContext.Candidates.Where(x => x.IdCandidate == candidate.IdCandidate).ToListAsync();
+            if (candidateExist.Count > 0)
+            {
+                ViewBag.candidateExist = true;
+                ViewBag.candidateId = candidate.IdCandidate;
+                return View();
+            }
+            else
+            {
+                candidate.InsertDate = DateTime.Now;
+                await _candidateFactoryContext.Candidates.AddAsync(candidate);
+                await _candidateFactoryContext.SaveChangesAsync();
+                return RedirectToAction(nameof(List));
+            }            
         }
 
         [HttpGet]
